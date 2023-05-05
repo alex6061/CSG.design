@@ -65,7 +65,7 @@
 
 .hero {
   position: relative;
-  padding: 195px 0 158px;
+  padding: 50px 0 158px;
   z-index: 1;
 }
 
@@ -296,20 +296,18 @@
   }
 }
 .bg__list {
-  position: absolute;
+  position: relative;
 }
 
 .bg_1 {
-  position: relative;
+  position: absolute;
   top: 0px;
   transition: transform 0.2s ease-in-out;
 }
 
 .bg_1 {
-  position: relative;
+  position: absolute;
   transform: rotate(-22.8deg);
-  top: -44px;
-  left: 240px;
   background-image: url("Q../../../img/bg_1.png");
   background-size: auto;
   background-repeat: no-repeat;
@@ -318,6 +316,28 @@
   filter: blur(66px);
   transform: rotate(360deg);
   animation: moving 15s infinite linear;
+}
+
+.bg_2 {
+  position: absolute;
+  transform: rotate(-22.8deg);
+  background-image: url("Q../../../img/bg_2.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 677px;
+  height: 479px;
+  filter: blur(66px);
+}
+
+.bg_3 {
+  position: relative;
+  transform: rotate(-22.8deg);
+  background-image: url("Q../../../img/bg_3.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 503px;
+  height: 356px;
+  filter: blur(66px);
 }
 
 body {
