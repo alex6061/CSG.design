@@ -1,0 +1,86 @@
+.footer__wrapper {
+    padding: 0 0 70px;
+}
+
+.footer__button {
+    display: block;
+    margin:  0 auto;
+    padding: 11px 53px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 61px;
+    color: #000;
+    cursor: pointer;
+    font-family: Exo2, sans-serif;
+   
+}
+
+.footer__inner{
+  padding: 24px 0 28px;
+
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & li:nth-child(1) {
+        padding-bottom: 12px;
+    }
+
+    & li a {
+        font-family: Exo2, sans-serif;  
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 28px;
+
+}
+
+
+.footer__social__item {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+}
+
+.footer__social__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.footer__social__svg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// .whatsapp {
+//     width: 16.88;
+//     height: 16.33;
+// }
+
+// .telegram {
+//     width: 16.5;
+//     height: 13.5;
+// }
+
+// .instagram {
+//     width: 16.88;
+//     height: 16.88;
+// }

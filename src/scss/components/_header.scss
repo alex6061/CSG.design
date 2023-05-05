@@ -1,0 +1,46 @@
+.header{
+    padding-top: 57px;
+}
+
+
+.header__logo  {
+    margin: 0 auto;
+    text-align: center;
+    width: 184px;
+    height: 47px;
+    margin-bottom: 22px;
+}
+
+
+.header__list{
+    padding: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px; 
+    color: #FFFFFF;
+    font-family: Exo, sans-serif;
+}
+
+.header__link:not(:last-child):not(:nth-child(3))::after {
+    position: relative;
+    content: '|';
+    width: 1px;
+    height: 4px;
+    color: #FFFFFF;
+    padding: 0 3px;
+    top: -1px;
+
+}
+
+
+
+
