@@ -1,0 +1,76 @@
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+
+.bg__list {
+    position: absolute;
+}
+
+.bg_1 {
+    position: relative;
+    top: 0px;
+    transition: transform .2s ease-in-out;
+    
+}
+
+.bg_1 {
+    position: relative;
+    transform: rotate(-22.8deg);
+    top: -44px;
+    left: 240px;
+    background-image: url("Q../../../img/bg_1.png");
+     background-size: auto;
+     background-repeat: no-repeat;
+    width: 503px;
+    height: 356px;
+    filter: blur(66px);
+    transform: rotate(360deg);
+
+    animation: moving 15s infinite linear;
+
+}
+
+
+// .bg_2 {
+//     position: fixed;
+//     transform: rotate(-22.8deg);
+//     top:1px;    
+//     left: 400px; 
+//         background-image: url("Q../../../img/bg_2.png");
+//      background-size: auto;
+//      background-repeat: no-repeat;
+//     width: 677px;
+//     height: 479px;
+//     filter: blur(66px);
+    
+// }
+
+
+// .bg_3 {
+//     position: relative;
+//     transform: rotate(-22.8deg);
+//     top: -44px;
+//     left: 386px;
+//      background-image: url("Q../../../img/bg_3.png");
+//      background-size: auto;
+//      background-repeat: no-repeat;
+//         width: 503px;
+//         height: 356px;
+//         filter: blur(66px);
+    
+// }

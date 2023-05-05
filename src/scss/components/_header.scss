@@ -9,6 +9,15 @@
     width: 184px;
     height: 47px;
     margin-bottom: 22px;
+    @media screen and (min-width: 768px) {
+        width: 271px;
+        height: 69px;
+    };
+    
+    @media screen and (min-width: 1280px){
+        width: 377px;
+        height: 96px;
+    }
 }
 
 
@@ -28,6 +37,14 @@
     letter-spacing: 0.3px; 
     color: #FFFFFF;
     font-family: Exo, sans-serif;
+    @media screen and (min-width: 768px) {
+        font-size:20px ;
+        line-height: 26.58px;
+    };
+    @media screen and (min-width: 1280px){
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
 
 .header__link:not(:last-child):not(:nth-child(3))::after {

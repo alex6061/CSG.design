@@ -10,18 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
  <!-- ===============header__logo=========== -->
-      <!-- <svg class="header__logo">
-        <use  class="header__logo" width="30px" height="30px" src="./src/img/svg/Logo.svg"></use>
-      </svg> -->
       <object type="image/svg+xml" data="SvgImg.svg" >
         <img class="header__logo"  src="./src/img/svg/Logo.svg" alt="logo" />
       </object>
+
+      <svg class="header__logo">
+        <symbol id="icon-Logo" viewBox="0 0 126 32">
+        <use class="v" href="./src/img/symbol-defs.svg#icon-Logo"></use>
+      </svg>
 
       <div class="header__list">
         <a href="" class="header__link">development</a>
@@ -36,9 +37,12 @@
 <!-- ===============section__hero=============== -->
   <section class="hero">
     <div class="container ">
-      <div class="bg">
-        <!-- <img class="bg" src="./src/img/bg_1.png" alt="" width="100px"> -->
+       <div class="bg__list">
+        <div class="bg_1"></div> 
+        <!-- <div class="bg_2"></div>  
+        <div class="bg_3"></div> -->
       </div> 
+        
         <!-- ===============hero__title========= -->
       <h1 class="hero__title">Сайт находится в разработке </h1>
       <p class="hero__text">Приносим извинения за неудобства</p>
@@ -62,7 +66,7 @@
           <!-- ==========footer__social========== -->
         <ul class="footer__social">
           <li class="footer__social__item">
-            <a class="footer__social__link " href="">
+            <a class="footer__social__link " href="https://wa.me/88002501950">
               <svg class="footer__social__svg whatsapp" width="16.88" height="16.33">
                 <use class="whatsapp" href="./src/img/symbol-defs.svg#icon-whatsapp"></use>
               </svg>
@@ -76,7 +80,7 @@
             </a>
           </li>
           <li class="footer__social__item">
-            <a class="footer__social__link " href="">
+            <a class="footer__social__link " href="https://instagram.com/csg.digital">
               <svg class="footer__social__svg instagram" width="16.88" height="16.88">
                 <use class="instagram" href="./src/img/symbol-defs.svg#icon-instagram"></use>
               </svg>
@@ -87,6 +91,24 @@
     </div>
   </footer>
 <!-- ===============footer_end=================== -->
+
+<!-- =================modal============== -->
+  <div class="modal">
+    <form action="#" class="form">
+      <label id="form__name" for=""></label>
+      <input class="form__name" type="text" placeholder="Имя">
+      <input type="tel" placeholder="Телефон">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Сообщение">
+      <button class="form_send">отправить</button>
+    </form>
+  </div>
+<!-- =================modal_end============== -->
+
+
+<!-- ===============script============ -->
+<script src="./src/js/index.js"></script>
+<script src="./src/js/jquery-3.6.4.min.js"></script>
 
 </body>
 </html> 

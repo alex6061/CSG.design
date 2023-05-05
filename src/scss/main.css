@@ -10,6 +10,18 @@
   height: 47px;
   margin-bottom: 22px;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 271px;
+    height: 69px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    width: 377px;
+    height: 96px;
+  }
+}
 
 .header__list {
   padding: 0 70px;
@@ -28,6 +40,18 @@
   color: #FFFFFF;
   font-family: Exo, sans-serif;
 }
+@media screen and (min-width: 768px) {
+  .header__link {
+    font-size: 20px;
+    line-height: 26.58px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__link {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
 .header__link:not(:last-child):not(:nth-child(3))::after {
   position: relative;
@@ -45,20 +69,6 @@
   z-index: 1;
 }
 
-.bg {
-  position: relative;
-  transform: rotate(-22.8deg);
-  background-image: url("Q../../../img/bg_1.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  width: 503px;
-  height: 356px;
-  box-shadow: -35px 28px 145px 23px rgba(0, 88, 221, 0.9);
-  -webkit-box-shadow: -35px 28px 145px 23px rgba(0, 88, 221, 0.9);
-  -moz-box-shadow: -35px 28px 145px 23px rgba(0, 88, 221, 0.9);
-  margin-right: auto;
-}
-
 .hero__title {
   font-weight: 600;
   font-size: 21px;
@@ -66,6 +76,19 @@
   text-align: center;
   color: #FFFFFF;
   font-family: Exo2, sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+  }
 }
 
 .hero__text {
@@ -80,6 +103,14 @@
 .footer__wrapper {
   padding: 0 0 70px;
 }
+@media screen and (min-width: 1280px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
 .footer__button {
   display: block;
@@ -91,9 +122,40 @@
   cursor: pointer;
   font-family: Exo2, sans-serif;
 }
+@media screen and (min-width: 480px) {
+  .footer__button {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__button {
+    font-size: 20px;
+    line-height: 24px;
+    order: 3;
+    margin: 0;
+  }
+}
 
 .footer__inner {
   padding: 24px 0 28px;
+}
+@media screen and (min-width: 768px) {
+  .footer__inner {
+    padding: 30px 0 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__inner {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__email {
+    margin-right: 80px;
+  }
 }
 
 .footer__contacts {
@@ -101,6 +163,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .footer__contacts {
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+  .footer__contacts .footer__contacts:nth-child(1) {
+    margin-left: 50px;
+  }
 }
 .footer__contacts li:nth-child(1) {
   padding-bottom: 12px;
@@ -114,12 +185,33 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .footer__contacts li a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__contacts li a {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
 
 .footer__social {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 28px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__social {
+    order: 2;
+  }
+}
+
+.footer__social__link {
+  cursor: pointer;
 }
 
 .footer__social__item {
@@ -128,11 +220,16 @@
   width: 45px;
   height: 45px;
 }
+@media screen and (min-width: 768px) {
+  .footer__social__item {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .footer__social__item:not(:last-child) {
   margin-right: 33px;
 }
-
 .footer__social__svg {
   position: relative;
   top: 50%;
@@ -140,8 +237,109 @@
   transform: translate(-50%, -50%);
 }
 
+.whatsapp {
+  width: 16.88;
+  height: 16.33;
+}
+@media screen and (min-width: 768px) {
+  .whatsapp {
+    width: 22.5px;
+    height: 21.77px;
+  }
+}
+
+.telegram {
+  width: 16.5;
+  height: 13.5;
+}
+@media screen and (min-width: 768px) {
+  .telegram {
+    width: 22px;
+    height: 18px;
+  }
+}
+
+.instagram {
+  width: 16.88;
+  height: 16.88;
+}
+@media screen and (min-width: 768px) {
+  .instagram {
+    width: 22.5px;
+    height: 22.5px;
+  }
+}
+
+.modal {
+  width: 40%;
+  height: 100vh;
+  transition: 250ms;
+  transform: translateX(-100%);
+}
+
+@keyframes moving {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes bobble {
+  0% {
+    transform: translate3d(50px, 40px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(50px, 50px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(50px, 40px, 0px);
+  }
+}
+.bg__list {
+  position: absolute;
+}
+
+.bg_1 {
+  position: relative;
+  top: 0px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bg_1 {
+  position: relative;
+  transform: rotate(-22.8deg);
+  top: -44px;
+  left: 240px;
+  background-image: url("Q../../../img/bg_1.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 503px;
+  height: 356px;
+  filter: blur(66px);
+  transform: rotate(360deg);
+  animation: moving 15s infinite linear;
+}
+
 body {
   background-color: #161718;
+}
+
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+  font-family: Exo, sans-serif;
+}
+@font-face {
+  src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap);
+  font-family: Exo2, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 /* Указываем box sizing */
@@ -535,17 +733,4 @@ template {
  */
 [hidden] {
   display: none;
-}
-
-@font-face {
-  src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-  font-family: Exo, sans-serif;
-}
-@font-face {
-  src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap);
-  font-family: Exo2, sans-serif;
-}
-.container {
-  margin: 0 auto;
-  padding: 0 25px;
 }/*# sourceMappingURL=main.css.map */

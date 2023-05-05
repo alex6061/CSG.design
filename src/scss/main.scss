@@ -1,9 +1,13 @@
+    // ======components=====
 @import './components/header'; 
 @import './components/hero'; 
 @import './components/footer'; 
-
+@import './components/modal'; 
+@import './components/bg'; 
+    // ====utils======
 @import './utils/common'; 
+@import './utils/fonts'; 
+@import './utils/container';
+    //====res======
 @import './utils/res'; 
 @import './utils/normalize'; 
-@import './utils/fonts'; 
-@import './utils/container'; 
